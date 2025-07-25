@@ -18,7 +18,11 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .container div.six {
   top: 10vh;
@@ -27,18 +31,18 @@ body {
 
 .container div.seven,
 .container div.eight {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: auto;
 }
 
 .container > div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 20vh;
+  position: relative;
+  width: 100%;
+  padding: 20px 10px;
 }
+
 
 .one {
   font-size: 4.5rem;
