@@ -5,16 +5,19 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
+
 .container {
-  height: 100vh;
-  width: 100vh;
+  min-height: 100vh;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container div.six {
@@ -296,5 +299,24 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .four .text-box {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+
+  .idea-5 span {
+    font-size: 2.5rem;
+  }
+
+  .idea-6 span {
+    font-size: 5rem;
   }
 }
